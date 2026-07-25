@@ -134,7 +134,7 @@ traffic through TUN — entirely inside one app, one window, one dashboard.
 
 <br><br>
 
-### SNI Management — native Shade engine configuration
+### Live Monitor — native Shade engine configuration & professional monitor and log system
 
 <img src="docs/dewberry-sni-4k.png" alt="Dewberry SNI Management — listen host/port, fake SNI, destination" width="860">
 
@@ -176,16 +176,16 @@ dewberry/
 
 ```
 ┌──────────────────────────────────────────────────┐
-│                   Dewberry UI                     │
-│         (PySide6 · frameless · single window)      │
+│                   Dewberry UI                    │
+│         (PySide6 · frameless · single window)    │
 └───────────────────┬──────────────────────────────┘
                     │ manages
         ┌───────────┼─────────────┐
         ▼                          ▼
-  ┌───────────┐             ┌─────────────┐
-  │   Shade   │             │  Xray core  │
-  │ SNI engine│             │  + TUN/Wintun│
-  └───────────┘             └─────────────┘
+  ┌───────────┐             ┌───────────────┐
+  │   Shade   │             │  Xray core    │
+  │ SNI engine│             │  + TUN/Wintun │
+  └───────────┘             └───────────────┘
 ```
 
 ---
