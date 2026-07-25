@@ -1,0 +1,48 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="berry" x1="120" y1="110" x2="400" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="0.5" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="250" y1="70" x2="330" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#0EA5E9"/>
+    </linearGradient>
+    <radialGradient id="drop" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="0.6" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="80" y1="80" x2="432" y2="432" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- subtle security ring: signals protection without a literal shield -->
+  <circle cx="256" cy="268" r="196" stroke="url(#ring)" stroke-width="10" stroke-opacity="0.28" fill="none"/>
+  <path d="M256 72 A196 196 0 0 1 452 268" stroke="url(#ring)" stroke-width="12" stroke-linecap="round" fill="none"/>
+
+  <!-- leaf -->
+  <path d="M256 150 C 272 96, 322 82, 356 92 C 352 132, 322 160, 268 162 Z" fill="url(#leaf)"/>
+  <path d="M300 104 C 288 122, 278 138, 270 156" stroke="#0B1220" stroke-opacity="0.25" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+  <!-- dewberry drupelet cluster -->
+  <g fill="url(#berry)">
+    <circle cx="212" cy="196" r="46"/>
+    <circle cx="300" cy="196" r="46"/>
+    <circle cx="168" cy="272" r="46"/>
+    <circle cx="256" cy="258" r="48"/>
+    <circle cx="344" cy="272" r="46"/>
+    <circle cx="212" cy="346" r="46"/>
+    <circle cx="300" cy="346" r="46"/>
+    <circle cx="256" cy="414" r="42"/>
+  </g>
+
+  <!-- dew-drop highlights (the "dew" in Dewberry) -->
+  <g>
+    <circle cx="212" cy="196" r="46" fill="url(#drop)"/>
+    <circle cx="256" cy="258" r="48" fill="url(#drop)"/>
+    <circle cx="300" cy="346" r="46" fill="url(#drop)"/>
+  </g>
+</svg>

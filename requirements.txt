@@ -1,0 +1,12 @@
+# Dewberry runtime dependencies
+PySide6>=6.6
+requests>=2.31
+PySocks>=1.7.1
+psutil>=5.9
+
+# Windows-only — the SNI engine's packet driver bridge.
+# Installed automatically on Windows; harmless to omit elsewhere.
+pydivert>=2.1.0 ; sys_platform == "win32"
+
+# Build
+pyinstaller>=6.0
